@@ -1,0 +1,39 @@
+body{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 200px;
+}
+div{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: #ff5722 ;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 2;
+  font-size: 25px;
+}
+
+body::before{
+ content:" ";
+ width: 135px;
+ height: 120px;
+  background-color: red;
+ background-image: linear-gradient(to right, #03a9f4,#ff5722  );
+ border-radius: 50%;
+ display: block;
+ position: absolute;
+ z-index: 1;
+
+}
+
+
+
+/* 1 #f44336  -  2 #2196f3  - 3 #4caf50  - 4 #e91e63  - 5 #673ab7-*/
